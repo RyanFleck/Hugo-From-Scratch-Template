@@ -1,24 +1,25 @@
 {{ define "main" }}
 <main class="center">
+  <!-- Article Title -->
   <h1>{{ .Title }}</h1>
+
+  <!-- Table of Contents -->
   {{ if .Params.toc }}
-  <aside id="toc">
-    <h3>Table of Contents</h3>
-    {{ .TableOfContents }}
-  </aside>
+  <aside id="toc">{{ .TableOfContents }}</aside>
+  <br />
   {{ end }}
 
+  <!-- Article Content-->
   <article>{{ .Content }}</article>
 
-  {{ $taxonomy := "tags" }}
-  <!---->
-  {{ with .Param $taxonomy }}
-  <!---->
+  <!-- This is just to show the tags. -->
+  {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
+  <!-- Will only show if tags are present. -->
   Tags: {{ range $index, $tag := . }}
-  <!---->
+  <!-- For each tag: -->
   {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
   <a href="{{ .Permalink }}">{{ $tag }}</a>,
-  <!---->
+  <!-- Ends. -->
   {{- end -}} {{- end -}} {{ end }}
 </main>
 {{end}}
