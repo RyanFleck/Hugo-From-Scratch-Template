@@ -26,6 +26,11 @@ html {
   display: inline-block;
   margin: 0px;
   margin-right: 0.3rem;
+  color: black;
+}
+
+.site-title-link {
+  text-decoration: none;
 }
 
 img {
