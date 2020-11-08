@@ -1,3 +1,9 @@
 baseURL = "https://hugo-from-scratch.netlify.app/"
 languageCode = "en-us"
 title = "Hugo From Scratch"
+paginate = 10 
+pygmentsCodeFences = true
+pygmentsStyle = "trac"
+
+[permalinks]
+    posts = "/:year/:filename"
