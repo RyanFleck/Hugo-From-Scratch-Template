@@ -9,5 +9,16 @@
   {{ end }}
 
   <article>{{ .Content }}</article>
+
+  {{ $taxonomy := "tags" }}
+  <!---->
+  {{ with .Param $taxonomy }}
+  <!---->
+  Tags: {{ range $index, $tag := . }}
+  <!---->
+  {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+  <a href="{{ .Permalink }}">{{ $tag }}</a>,
+  <!---->
+  {{- end -}} {{- end -}} {{ end }}
 </main>
 {{end}}
