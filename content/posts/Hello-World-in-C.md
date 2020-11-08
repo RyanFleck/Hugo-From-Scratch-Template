@@ -1,7 +1,7 @@
 ---
 title: "Hello World in C"
 date: 2020-11-07T21:56:30-07:00
-draft: true
+draft: false
 toc: false
 tags:
   - Programming

@@ -1,12 +1,14 @@
 ---
 title: "Instructions"
 date: 2020-11-07T21:29:16-07:00
-draft: true
-toc: false
+draft: false
+toc: true
 tags:
   - Instructions
   - Learning
 ---
+
+Introduction
 
 Welcome to your new _Hugo_ website!
 
