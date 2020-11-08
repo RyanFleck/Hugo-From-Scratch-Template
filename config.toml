@@ -1,0 +1,3 @@
+baseURL = "http://replace-me-with-your-domain-in-config-toml.org/"
+languageCode = "en-us"
+title = "Blank Site Name - Replace in config.toml"
