@@ -7,3 +7,10 @@ pygmentsStyle = "trac"
 
 [permalinks]
     posts = "/:year/:filename"
+
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.tableOfContents]
+        endLevel = 5
+        ordered = false
+        startLevel = 1

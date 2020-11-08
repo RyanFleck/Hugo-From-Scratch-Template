@@ -1,8 +1,9 @@
 {{ define "main" }}
 <main class="center">
+  <h1>{{ .Title }}</h1>
   {{ if .Params.toc }}
   <aside id="toc">
-    <h2>Contents</h2>
+    <h3>Table of Contents</h3>
     {{ .TableOfContents }}
   </aside>
   {{ end }}

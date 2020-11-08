@@ -27,3 +27,8 @@ html {
   margin: 0px;
   margin-right: 0.3rem;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
