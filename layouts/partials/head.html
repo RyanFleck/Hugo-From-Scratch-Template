@@ -1,0 +1,28 @@
+<head>
+  <!-- Page Properties -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1,
+    shrink-to-fit=no"
+  />
+
+  <!-- Site Title and Description -->
+  <title>
+    {{ if and .Title (not .IsHome) }}{{ .Title }} - {{end}}{{ .Site.Title }}
+  </title>
+  <meta name="description" content="{{ .Summary }}" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- Scripts and Styling -->
+  <link rel="stylesheet" href="/css/style.css" media="screen" />
+  <script
+    type="application/javascript"
+    src="/js/scripts.js"
+    async
+    defer
+  ></script>
+</head>
