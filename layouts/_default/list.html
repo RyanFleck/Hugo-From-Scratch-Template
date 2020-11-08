@@ -5,11 +5,13 @@
 
   <!-- Paginator for content. -->
   <div id="paginator">
-    {{ range .Paginator.Pages }}
-    <div class="paginator-item">
-      <a href="{{.Permalink}}" class="toc-article-link">{{.Title}}</a>
-    </div>
-    {{ end }}
+    <ol>
+      {{ range .Paginator.Pages }}
+      <li>
+        <a href="{{.Permalink}}" class="toc-article-link">{{.Title}}</a>
+      </li>
+      {{ end }}
+    </ol>
   </div>
 
   <div id="page-number">
